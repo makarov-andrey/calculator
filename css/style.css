@@ -8,7 +8,7 @@
     color: #3C3D3F;
 }
 .calculator-block {
-    width: 700px;
+    width: 900px;
     height: 165px;
     margin: 0 auto;
     padding: 10px 5px;
@@ -25,12 +25,12 @@
     vertical-align: top;
 }
 .calculator-controls {
-    width: 75%;
+    width: 80%;
     position: relative;
     height: 100%;
 }
 .calculator-results {
-    width: 25%;
+    width: 20%;
     padding: 0 5px;
 }
 
@@ -75,7 +75,7 @@
 }
 .calculator-digit-box {
     display: table-cell;
-    width: 33.33%;
+    width: 25%;
     padding-left: 20px;
     vertical-align: bottom;
 }
@@ -86,6 +86,7 @@
     margin-bottom: 12px;
 }
 .calculator-digit--area {
+    display: block;
     width: 100%;
     height: 35px;
     background: #EBECEE;
@@ -93,10 +94,12 @@
     border-radius: 4px;
     position: relative;
 }
-.calculator-digit--area .calculator-digit--value {
+.calculator-digit--value {
     font-size: 22px;
+    outline: none;
+    display: inline-block;
 }
-.calculator-digit--area .calculator-digit--value-text {
+.calculator-digit--value-text {
     font-size: 18px;
 }
 .calculator-value--percent:after {
@@ -105,6 +108,12 @@
     top: 13px;
     right: 15px;
     font-size: 10px;
+}
+.calculator-value--investment {
+    cursor: text;
+    background: #fff;
+    border: 2px solid #ddd;
+    padding-top: 3px;
 }
 
 .calculator-columns {
@@ -179,13 +188,11 @@
     background: #83B7E6;
     cursor: pointer;
 }
-.calculator-slider--active-field {
-    width: 0;
-    height: 100%;
+.calculator-slider > .ui-slider-range {
     background: #E9513F;
 }
 .calculator-slider,
-.calculator-slider--active-field {
+.calculator-slider > .ui-slider-range {
     border-radius: 3px;
 }
 .calculator-slider > .ui-slider-handle {
@@ -197,4 +204,11 @@
     border-radius: 50%;
     top: -13px;
     cursor: pointer;
+}
+.calculator-slider > .ui-slider-handle,
+.calculator-slider > .ui-slider-range {
+    transition: all 300ms linear;
+}
+.calculator--no-transition {
+    transition: none !important;
 }
