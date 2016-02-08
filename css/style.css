@@ -67,7 +67,6 @@
 }
 
 .calculator-digits {
-    padding: 0 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -76,11 +75,8 @@
 .calculator-digit-box {
     display: table-cell;
     width: 25%;
-    padding-left: 20px;
+    padding: 0 10px;
     vertical-align: bottom;
-}
-.calculator-digit-box:first-child {
-    padding-left: 0;
 }
 .calculator-digit--title {
     margin-bottom: 12px;
