@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="calculator-block">
+    <div class="calculator-controls">
+        <div class="calculator-slider-wrapper">
+            <div class="calculator-slider-title">
+                Сумма:
+            </div>
+            <div class="calculator-slider-box">
+                <div class="calculator-slider">
+                    <div class="calculator-slider--active-field"></div>
+                </div>
+                <div class="calculator-slider--min">100&nbsp;р.</div>
+                <div class="calculator-slider--max">90&nbsp;000&nbsp;р.</div>
+            </div>
+        </div>
+        <div class="calculator-digits">
+            <div class="calculator-digit-box">
+                <div class="calculator-digit--title">Срок</div>
+                <div class="calculator-digit--area calculator-value--time">
+                    <span class="calculator-digit--value">1</span>&nbsp;<span class="calculator-digit--value-text">день</span>
+                </div>
+            </div>
+            <div class="calculator-digit-box">
+                <div class="calculator-digit--title">Процентная ставка</div>
+                <div class="calculator-digit--area calculator-value--percent">
+                    <span class="calculator-digit--value">15</span>
+                </div>
+            </div>
+            <div class="calculator-digit-box">
+                <div class="calculator-digit--title">Доход</div>
+                <div class="calculator-digit--area calculator-value--income">
+                    <span class="calculator-digit--value">15</span>&nbsp;<span class="calculator-digit--value-text">р.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculator-results">
+        <div class="calculator-columns">
+            <div class="calculator-column--real">
+                <div class="calculator-column--real-area">
+                    <div class="calculator-column--info">
+                        <span class="calculator-column--title">Сегодня</span><br>
+                        <span class="calculator-column--value">100</span>&nbsp;р.
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-column--imaginary">
+                <div class="calculator-column--imaginary-area">
+                    <div class="calculator-column--info">
+                        <span class="calculator-column--title">Будет</span><br>
+                        <span class="calculator-column--value">115</span>&nbsp;р.
+                    </div>
+                </div>
+                <div class="calculator-column--real-area"></div>
+            </div>
+        </div>
+        <div class="calculator--button-box">
+            <button>Инвестировать</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
